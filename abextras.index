@@ -2,16 +2,12 @@
 <index>
 	<info>
 		<name>Paavu's abextras</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="abextras.index" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/abextras.index" />
 		</update>
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/source.xml" />
-
-		<!-- spells -->
-		<file name="spells.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/spells/spells.xml" />
-		<file name="spells-xge.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/spells/spells-xge.xml" />
 
 		<!-- classes -->
 		<file name="class-cleric-ua.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/classes/class-cleric-ua.xml" />

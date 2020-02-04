@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
 		<name>Paavu's abextras</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="abextras.index" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/abextras.index" />
 		</update>
 	</info>
 	<files>
 		<file name="source.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/source.xml" />
-
-		<!-- classes -->
 		<file name="class-cleric-ua.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/classes/class-cleric-ua.xml" />
 		<file name="class-warden.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/classes/class-warden.xml" />
+		<file name="class-warlock-int.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/classes/class-warlock-int.xml" />
 	</files>
 </index>

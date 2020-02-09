@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Campaigns</name>
+        <description>Campaigns from abextras</description>
+        <author url="https://github.com/paavuenthusiast/abextras">abextras</author>
+        <update version="0.0.1">
+            <file name="languages.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/campaigns.xml" />
+        </update>
+	</info>
+	<element name="Forgotten crimes of Garwei Campaign" type="Option" source="abextras" id="ID_ABEXTRAS_CAMPAIGN_GARWEI">
+		<description>
+			<p>Characters in this world are localised from their origin:</p>
+			<ul>
+				<li>You know a local dialect language.</li>
+				<li>You gain proficiency in on additional tool.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">As a player in the Forgotten crimes of Garwei Campaign you gain some benefits.</set>
+		</setters>
+		<rules>
+			<select type="Language" name="Language (Campaign)" supports="Dialect"/>
+			<select type="Proficiency" name="Tool Proficiency (Campaign)" supports="Tool"/>
+		</rules>
+	</element>
+</elements>

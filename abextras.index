@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Paavu's abextras</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="abextras.index" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/abextras.index" />
 		</update>
 	</info>
@@ -11,5 +11,10 @@
 		<file name="class-cleric-ua.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/classes/class-cleric-ua.xml" />
 		<file name="class-warden.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/classes/class-warden.xml" />
 		<file name="class-warlock-int.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/classes/class-warlock-int.xml" />
+		<file name="race-zuddhagni-aasimar.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/races/race-zuddhagni-aasimar.xml" />
+		<file name="background-divine-pawn.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/backgrounds/background-divine-pawn.xml" />
+		<file name="campaigns.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/campaigns.xml" />
+		<file name="feats.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/feats.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/languages.xml" />
 	</files>
 </index>

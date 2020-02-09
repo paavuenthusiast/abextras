@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Feats</name>
+        <description>The Feats from abextras</description>
+        <author url="https://github.com/paavuenthusiast/abextras">abextras</author>
+        <update version="0.0.5">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/feat.xml" />
+        </update>
+    </info>
+    <element name="Flames of Zuddhagni" type="Feat" source="abextras" id="ID_ABEXTRAS_FEAT_FLAMES_OF_ZUDDHAGNI">
+        <prerequisite>Zuddhagni Aasimar</prerequisite>
+        <requirements>ID_ABEXTRAS_RACE_ZUDDHAGNI_AASIMAR</requirements>
+        <description>
+            <p><i>Prerequisite: Zuddhagni Aasimar</i></p>
+            <p>You learn to call on divine fire to serve your commands. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Intelligence or Charisma score by 1, to a maximum of 20.</li>
+                <li>When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1.</li>
+                <li>Whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don’t harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes 1d4 fire damage.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1. Whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don’t harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes 1d4 fire damage.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement (Flames of Zuddhagni)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
+        </rules>
+    </element>
+</elements>

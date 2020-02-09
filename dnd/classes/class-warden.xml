@@ -4,7 +4,7 @@
     <name>Warden</name>
     <description>The Warden 2.1 class from reddit UA.</description>
     <author url="https://drive.google.com/file/d/1XKnQu_8_HEav2RK55e0awi_xAZGkH_lA/view">Layhnet</author>
-    <update version="2.1.0">
+    <update version="2.1.1">
       <file name="class-warden.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/classes/class-warden.xml" />
     </update>
   </info>
@@ -366,6 +366,7 @@
     <description>
       <p>At 7th level, you can use your reaction to produce one the following effects, depending on the prime element you’ve chosen.</p>
     </description>
+    <sheet display="false"/>
   </element>
 
   <element name="Nature Sense" type="Class Feature" source="UA" id="ID_ABEXTRAS_CLASS_FEATURE_WARDEN_NATURE_SENSE">
@@ -651,6 +652,7 @@
 
 			<grant type="Class Feature" id="ID_ABEXTRAS_CLASS_FEATURE_FLAMING_BRAVERY_INNER_FIRE" level="3"/>
 			<grant type="Class Feature" id="ID_ABEXTRAS_CLASS_FEATURE_FLAMING_BRAVERY_FIRE_BLANKET" level="3"/>
+			<grant type="Class Feature" id="ID_ABEXTRAS_CLASS_FEATURE_FLAMING_BRAVERY_PRIME_ELEMENTAL_SHIELD" level="7"/>
     </rules>
   </element>
 
@@ -667,6 +669,14 @@
     </description>
     <sheet action="Reaction" alt="Flaming Bravery">
       <description>Whenever a creature makes an attack roll against you, you can use your reaction and expend a power die to add the number rolled to your AC. You can choose to do this after the creature has rolled to attack, but must decide before the DM says whether the roll hits or misses. If you choose to expend this die and the attack misses, the attacking creature takes fire damage equal {{wisdom:modifier}} + the result of your power die.</description>
+		</sheet>
+  </element>
+
+  <element name="Prime Elemental Shield" type="Class Feature" source="UA" id="ID_ABEXTRAS_CLASS_FEATURE_FLAMING_BRAVERY_PRIME_ELEMENTAL_SHIELD">
+    <description><p>At 7th level, you can use your reaction to produce one the following effects, depending on the prime element you’ve chosen.</p>
+    </description>
+    <sheet action="Reaction">
+      <description>When a creature forces you to save against being grappled, shoved, or knocked prone you can use your reaction to make that save with advantage, causing your body to suddenly flare up in energy.</description>
 		</sheet>
   </element>
 </elements>

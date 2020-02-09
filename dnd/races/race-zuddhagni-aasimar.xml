@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Zuddhagni Aasimar</name>
+		<description></description>
+		<author url="https://github.com/paavuenthusiast/abextras">abextras</author>
+		<update version="0.1.5">
+			<file name="race-zuddhagni-aasimar.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/races/race-zuddhagni-aasimar.xml" />
+		</update>
+	</info>
+  <element name="Zuddhagni Aasimar" type="Race" source="abextras" id="ID_ABEXTRAS_RACE_ZUDDHAGNI_AASIMAR">
+    <description>
+        <p class="flavor">Aasimar bear within their souls the light of the heavens. They are descended from humans with a touch of the power of Mount Celestia, the divine realm of many lawful good deities. Aasimar are born to serve as champions of the gods, their births hailed as blessed events. They are a people of otherworldly visages, with luminous features that reveal their celestial heritage.</p>
+        <h4>CELESTIAL CHAMPIONS</h4>
+        <p>Aasimar are placed in the world to serve as guardians of law and good. Their patrons expect them to strike at evil, lead by example, and further the cause of justice.</p>
+        <p class="indent">From an early age, an aasimar receives visions and guidance from celestial entities via dreams. These dreams help shape an aasimar, granting a sense of destiny and a desire for righteousness.</p>
+        <p class="indent">Each aasimar can count a specific celestial agent of the gods as a guide. This entity is typically a deva, an angel who acts as a messenger to the mortal world.</p>
+        <h4>HIDDEN WANDERERS</h4>
+        <p>While aasimar are strident foes of evil, they typically prefer to keep a low profile. An aasimar inevitably draws the attention of evil cultists, fiends, and other enemies of good, all of whom would be eager to strike down a celestial champion if they had the chance.</p>
+        <p class="indent">When traveling, aasimar prefer hoods, closed helms, and other gear that allows them to conceal their identities. They nevertheless have no compunction about striking openly at evil. The secrecy they desire is never worth endangering the innocent.</p>
+        <h4>AASIMAR GUIDES</h4>
+        <p>An aasimar, except for one who has turned to evil, has a link to an angelic being. That being- usually a devaprovides guidance to the aasimar, though this connection functions only in dreams. As such, the guidance is not a direct command or a simple spoken word. Instead, the aasimar receives visions, prophecies, and feelings.</p>
+        <p class="indent">The angelic being is far from omniscient. Its guidance is based on its understanding of the tenets of law and good, and it might have insight into combating especially powerful evils that it knows about.</p>
+        <p class="indent">As part of fleshing out an aasimar character, consider the nature of that character's angelic guide. The Angelic Guide tables offer names and natures that you can use to flesh out your character's guide.</p>
+        <h4>CONFLICTED SOULS</h4>
+        <p>Despite its celestial origin, an aasimar is mortal and possesses free will. Most aasimar follow their ordained path, but some grow to see their abilities as a curse. These disaffected aasimar are typically content to turn away frorri the world, but a few become agents of evil. In their minds, their exposure to celestial powers amounted to little more than brainwashing.</p>
+        <p class="indent">Evil aasimar make deadly foes. The radiant power they once commanded becomes corrupted into a horrid, draining magic. And their angelic guides abandon them.</p>
+        <p class="indent">Even aasimar wholly dedicated to good sometimes feel torn between two worlds. The angels that guide them see the world from a distant perch. An aasimar who wishes to stop and help a town recover from a drought might be told by an angelic guide to push forward on a greater quest. To a distant angel, saving a few commoners might pale in comparison to defeating a cult of Orcus. An aasimar's guide is wise but not infallible.</p>
+        <h4>AASIMAR TRAITS</h4>
+        <p>Your aasimar character has the following racial traits.<br />
+          <span class="feature">Ability Score Increase.</span>Your Charisma score increases by 2.<br />
+          <span class="feature">Age.</span>Aasimar mature at the same rate as humans, but they can live up to 160 years.<br />
+          <span class="feature">Alignment.</span>Imbued with celestial power, most aasimar are good. Outcast aasimar are most often neutral or even evil.<br />
+          <span class="feature">Size.</span>Aasimar have the same range of height and weight as humans.<br />
+          <span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />        
+          <span class="feature">Dark Vision.</span>Blessed with a radiant soul, your vision can easily cut through darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.<br />
+          <span class="feature">Celestial Resistance.</span>You have resistance to necrotic damage and radiant damage.<br />
+          <span class="feature">Healing Hands.</span>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.<br />
+          <span class="feature">Light Bearer.</span>You know the light cantrip. Charisma is your spellcasting ability for it.<br />
+          <span class="feature">Languages.</span>You can speak, read, and write Common and Celestial.<br />      
+          <span class="feature">Subrace.</span>Three subraces of aasimar exist: protector aasimar, scourge aasimar, and fallen aasimar. Choose one of them for your character.<br />
+        </p>        
+    </description>
+    <sheet display="false"/>
+    <setters>
+      <set name="names" type="male">Aseir, Bardeid, Haseid, Khemed, Mehmen, Sudeiman, Zasheir</set>
+      <set name="names" type="female">Atala, Ceidil, Hama, Jasmal, Meilil, Seipora, Yasheira, Zasheida</set>
+      <set name="names" type="surname">Basha, Dumein, Jassan, Khalid, Mostana, Pashar, Rein</set>
+      <set name="names-format">{{name}} {{surname}}</set>   
+      <set name="height" modifier="2d10">4'8"</set>
+      <set name="weight" modifier="2d4">110 lb.</set>   
+    </setters>
+    <rules>
+      <stat name="strength" value="2" />
+      <stat name="wisdom" value="1" />
+      <stat name="innate speed" value="30" bonus="base" />
+      <grant type="Size" id="ID_SIZE_MEDIUM" />
+      <grant type="Language" id="ID_LANGUAGE_COMMON" />
+      <grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+      <grant type="Racial Trait" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_PURE_AWARENESS" />
+      <grant type="Racial Trait" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_DIVINE_INTUITION" />
+      <grant type="Racial Trait" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_WORDS_OF_HONOUR" />
+      <grant type="Racial Trait" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_MANTLE_OF_ZUDDHAGNI" />
+      <grant type="Racial Trait" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_LIGHT_BEARER" />
+    </rules>
+  </element>
+  <element name="Pure Awareness" type="Racial Trait" source="abextras" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_PURE_AWARENESS">
+    <description>
+      <p>You have proficiency in the Perception and Insight skill.</p>
+    </description>
+    <sheet display="false"/>
+    <rules>
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+      <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+	</rules>
+  </element>
+	<element name="Divine Intuition" type="Racial Trait" source="abextras" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_DIVINE_INTUITION">
+		<description>
+			<p>When you make a Wisdom (Insight) check, you can roll a d4 and add the number rolled to the ability check.</p>
+		</description>
+		<sheet>
+			<description>When you make an Insight check, you can roll a d4 and add the number rolled to the ability check.</description>
+		</sheet>
+	</element>
+	<element name="Words of Honour" type="Racial Trait" source="abextras" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_WORDS_OF_HONOUR">
+		<description>
+			<p>You cannot tell a lie. You cannot be disguised by magical means.</p>
+		</description>
+		<sheet>
+			<description>You cannot tell a lie. You cannot be disguised by magical means.</description>
+		</sheet>
+	</element>
+	<element name="Mantle of Zuddhagni" type="Racial Trait" source="abextras" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_MANTLE_OF_ZUDDHAGNI">
+		<description>
+			<p>When a creature makes an attack roll against you, you can use your reaction to roll 1d8 and add the number rolled to your AC. You can choose to do this after the creature has rolled to attack, but must decide before the DM says whether the roll hits or misses. If the attack misses and the attacking creature is within 5ft of you, they take fire damage equal to the number you rolled. You can use this a number of times equal to you WIS modifier. You regain expended uses at a long-rest.</p>
+		</description>
+    <sheet action="Reaction" usage="{{mantle of zuddhagni:count}}/Long Rest">
+      <description>When a creature makes an attack roll against you, you can use your reaction to roll 1d8 and add the number rolled to your AC. You can choose to do this after the creature has rolled to attack, but must decide before the DM says whether the roll hits or misses. If the attack misses and the attacking creature is within 5ft of you, they take fire damage equal to the number you rolled.</description>
+		</sheet>
+    <rules>
+      <stat name="mantle of zuddhagni:count" value="1" bonus="mantle of zuddhagni"/>
+      <stat name="mantle of zuddhagni:count" value="wisdom:modifier" bonus="mantle of zuddhagni"/>
+    </rules>
+	</element>
+  <element name="Light Bearer" type="Racial Trait" source="abextras" id="ID_ABEXTRAS_RACIAL_TRAIT_ZUDDHAGNI_AASIMAR_LIGHT_BEARER">
+    <description>
+      <p>You know the light cantrip. Wisdom is your spellcasting ability for it.</p>
+    </description>
+    <sheet>
+      <description>You know the light cantrip. (Spellcasting: Wisdom)</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_LIGHT" />
+    </rules>
+  </element> 
+</elements>

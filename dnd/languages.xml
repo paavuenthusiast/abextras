@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Languages</name>
+        <description>Languages from abextras</description>
+        <author url="https://github.com/paavuenthusiast/abextras">abextras</author>
+        <update version="0.0.1">
+            <file name="languages.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/languages.xml" />
+        </update>
+	</info>
+	<element name="Rutgardian" type="Language" source="abextras" id="ID_ABEXTRAS_LANGUAGE_RUTGARDIAN">
+		<supports>Dialect</supports>
+		<description>
+			<p>The native tongue of the Rutgardian people.</p>
+		</description>
+		<setters>
+			<set name="secret">true</set>
+			<set name="speakers">Rutgardians</set>
+		</setters>
+	</element>
+	<element name="Navarren" type="Language" source="abextras" id="ID_ABEXTRAS_LANGUAGE_NAVARREN">
+		<supports>Dialect</supports>
+		<description>
+			<p>The native tongue of the Navarren people.</p>
+		</description>
+		<setters>
+			<set name="secret">true</set>
+			<set name="speakers">Navarrens</set>
+		</setters>
+	</element>
+	<element name="Dunnish" type="Language" source="abextras" id="ID_ABEXTRAS_LANGUAGE_DUNNISH">
+		<supports>Dialect</supports>
+		<description>
+			<p>The native tongue of the Dunnish people.</p>
+		</description>
+		<setters>
+			<set name="secret">true</set>
+			<set name="speakers">Dunnishs</set>
+		</setters>
+	</element>
+	<element name="Linovian" type="Language" source="abextras" id="ID_ABEXTRAS_LANGUAGE_LINOVIAN">
+		<supports>Dialect</supports>
+		<description>
+			<p>The native tongue of the Linovian people.</p>
+		</description>
+		<setters>
+			<set name="secret">true</set>
+			<set name="speakers">Linovians</set>
+		</setters>
+	</element>
+</elements>

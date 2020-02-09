@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Divine Pawn</name>
+		<description>Divine Pawn</description>
+		<author>ABEXTRAS</author>
+		<update version="0.0.1">
+			<file name="background-divine-pawn.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/backgrounds/background-divine-pawn.xml" />
+		</update>
+	</info>
+	
+    <element name="Divine Pawn" type="Background" source="abextras" id="ID_ABEXTRAS_BACKGROUND_DIVINE_PAWN">
+        <prerequisite>Aasimar</prerequisite>
+        <requirements>ID_WOTC_VGTM_RACE_AASIMAR</requirements>
+        <description>
+            <p>You have spent your life of luxury serving as a icon of divine justice and a tool of political persuasion. You have come realise that those who you serve fail to unhold their duty to protect the most vulnerable, and you have saught to rectify this on your own. As an important political tool, those seeking power will be drawn to capture you.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong> Intimidation, and Deception</li>
+				<li><strong>Languages:</strong> One of your choice</li>
+				<li><strong>Tool Proficiencies:</strong> Disguise Kit</li>
+				<li><strong>Equipment:</strong> A disguise kit</li>
+			</ul>
+			<div element="ID_ABEXTRAS_BACKGROUND_FEATURE_DIVINE_PROTECTOR" />
+        </description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<select type="Language" name="Language (Divine Pawn)" number="1"/>
+			<grant type="Background Feature" id="ID_ABEXTRAS_BACKGROUND_FEATURE_DIVINE_PROTECTOR" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+		</rules>	
+    </element>
+	
+	<element name="Feature: Divine Protector" type="Background Feature" source="abextras" id="ID_ABEXTRAS_BACKGROUND_FEATURE_DIVINE_PROTECTOR">
+		<supports>Background Feature</supports>
+		<description>
+			<ul>
+				<li><p>You have spent years protecting vulnerable communities from danger. Within these communities you can find a place to hide, rest, or recuperate, unless you have shown yourself to be a danger to them. They will shield you from the law or anyone else searching for you, though they will not risk their lives for you.</p></li>
+				<li><p>Your heritage and past haunts you. You are seen as omen, and objectifying you as a tool to seize power draws threatening eyes.</p></li>
+			</ul>
+		</description>
+		<sheet alt="Divine Protector" />
+	</element>
+</elements>

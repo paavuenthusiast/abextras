@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapons</name>
+        <description>Weapons from abextras</description>
+        <author url="https://github.com/paavuenthusiast/abextras">abextras</author>
+		<update version="0.0.6">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/items/items-weapons.xml" />
+		</update>
+	</info>
+		<element name="Weapon Proficiency (Blade of Zuddhagni)" type="Proficiency" source="abextras" id="ID_ABEXTRAS_PROFICIENCY_BLADE_OF_ZUDDHAGNI">
+			<supports></supports>
+			<description></description>
+			<sheet display="false" />
+		</element>
+		<element name="Blade of Zuddhagni" type="Weapon" source="Player’s Handbook" id="ID_ABXTRAS_WEAPON_BLADE_OF_ZUDDHAGNI">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d8</set>
+			<set name="versatile">1d10</set>
+			<set name="proficiency">ID_ABEXTRAS_PROFICIENCY_BLADE_OF_ZUDDHAGNI</set>
+		</setters>
+	</element>
+	<element name="Blade of Zuddhagni" type="Magic Item" source="abextras" id="ID_ABEXTRAS_MAGIC_ITEM_BLADE_OF_ZUDDHAGNI">
+		<description>
+			<p>This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with shortswords or longswords, you are proficient with the <em>sun blade</em>.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.</p>
+			<p class="indent">The sword's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.</p>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="longsword">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Blade of Zuddhagni</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_ABEXTRAS_PROFICIENCY_BLADE_OF_ZUDDHAGNI" />			
+		</rules>
+	</element>
+</elements>

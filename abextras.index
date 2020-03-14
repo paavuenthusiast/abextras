@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Paavu's abextras</name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="abextras.index" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/abextras.index" />
 		</update>
 	</info>

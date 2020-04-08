@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Paavu's abextras</name>
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="abextras.index" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/abextras.index" />
 		</update>
 	</info>
@@ -19,6 +19,7 @@
 		<file name="campaigns.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/campaigns.xml" />
 		<file name="feats.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/feats.xml" />
 		<file name="languages.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/languages.xml" />
+		<file name="items-shards.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/items/items-shards.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/items/items-weapons.xml" />
 	</files>
 </index>

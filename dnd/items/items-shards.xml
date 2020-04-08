@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Shards</name>
+        <description>Shards from abextras</description>
+        <author>abextras</author>
+		<update version="0.0.8">
+			<file name="items-shards.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/items/items-shards.xml" />
+		</update>
+	</info>
+	<element name="The Oracle Shard" type="Magic Item" source="abextras" id="ID_ABEXTRAS_MAGIC_ITEM_ORACLE_SHARD">
+		<description>
+			<p>One of the fragments of the god Abaddon. This shard focuses his divination power.</p>
+			<h5>The gifts of foreknowledge</h5>
+			<ul>
+			<li>While attuned to the artifact, your Wisdom score is increased by 2 and your maximum Wisdom score is increased to 24.</li>
+			<li>The Shard has 7 charges. While attuned to the artifact you can use these charges to cast Augury (1 charge), Locate Creature (3 charges), Divination (3 charges), Scrying (4 charges) or Commune (4 charges). The shard regains 1d4 charges each dawn.</li>
+			<li>While attuned to the artifact you can cast the Guidance cantrip as a bonus action.</li>
+			</ul>
+			<h5>Touched by suffering</h5>
+			<p>While attuned to the artifact, demons have advantage on perception checks and attack rolls against you.</p>
+			<h5>Visions of pain</h5>
+			<p>When you use this artifact to learn about your personal timeline or people you care about, roll 1d8 and add your Wisdom modifier. If the result is 5 or lower, make a roll on the Indefinite Madness table. If the result is 6 or 7, roll on the long-term madness table. If the result is a 8 or 9, roll on the short-term madness table. If the result is 10 or higher, you are not affected by such visions. If you have been attuned to this item for more than a year, you may reroll the die once and take the new roll.</p>
+			<h5>Part of the whole</h5>
+			<p>This artifact gains additional properties while you are attuned to other Shard artifacts.</p>
+			<h5>Destroying the shard</h5>
+			<p>You do not know of a way to destroy this artifact.</p>
+		</description>
+		<setters>
+			<set name="keywords">oracle, shard</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="2" />
+			<stat name="wisdom:max" value="4" />
+		</rules>
+	</element>
+</elements>

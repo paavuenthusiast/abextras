@@ -3,8 +3,8 @@
 	<info>
 		<name>Languages</name>
         <description>Languages from abextras</description>
-        <author url="https://github.com/paavuenthusiast/abextras">abextras</author>
-        <update version="0.0.1">
+        <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">abextras</author>
+        <update version="0.0.2">
             <file name="languages.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/languages.xml" />
         </update>
 	</info>
@@ -46,6 +46,16 @@
 		<setters>
 			<set name="secret">true</set>
 			<set name="speakers">Linovians</set>
+		</setters>
+	</element>
+	<element name="Drashna" type="Language" source="abextras" id="ID_ABEXTRAS_LANGUAGE_DRASHNA">
+		<supports>Dialect</supports>
+		<description>
+			<p>The native tongue of the Drashna people.</p>
+		</description>
+		<setters>
+			<set name="secret">true</set>
+			<set name="speakers">Drashna</set>
 		</setters>
 	</element>
 </elements>

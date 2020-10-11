@@ -3,8 +3,8 @@
     <info>
         <name>Feats</name>
         <description>The Feats from abextras</description>
-        <author url="https://github.com/paavuenthusiast/abextras">abextras</author>
-        <update version="0.0.5">
+        <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">abextras</author>
+        <update version="0.0.6">
             <file name="feats.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/feat.xml" />
         </update>
     </info>
@@ -25,6 +25,21 @@
         </sheet>
         <rules>
             <select type="Ability Score Improvement" name="Ability Score Improvement (Flames of Zuddhagni)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CHARISMA" />
+        </rules>
+    </element>
+    <element name="Owl Glide" type="Feat" source="abextras" id="ID_ABEXTRAS_FEAT_OWL_GLIDE">
+        <description>
+            <p>You have been blessed one of natures gifts:</p>
+            <ul>
+                <li>Increase your Dexterity or Constitution score by 1, to a maximum of 20.</li>
+                <li>Your arms become wing-like allowing you to slow your fall and glide. Subtract 100ft from fall damage, move 2ft horizontally for every foot descended.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your arms become wing-like allowing you to slow your fall and glide. Subtract 100ft from fall damage, move 2ft horizontally for every foot descended.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Improvement (Owl Glide)" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION" />
         </rules>
     </element>
 </elements>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>The Visitor</name>
+    <description>The Visitor Homebrew</description>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Garwei UA</author>
+    <update version="0.0.1">
+      <file name="subclass-warlock-visitor.xml" url="https://raw.githubusercontent.com/paavuenthusiast/abextras/master/dnd/subclasses/subclass-warlock-visitor.xml" />
+    </update>
+  </info>
+  <element name="The Visitor" type="Archetype" source="abextras" id="ID_ABEXTRAS_ARCHETYPE_VISITOR">
+    <supports>Otherworldly Patron</supports>
+    <description>
+      <p>You received a most strange visitor; yourself. They came from another plane or another time and offered to teach you some of their power so that you could subjugate your own world. They promise to grant you knowledge and full power over the self, if you follow their instructions. Is this a vision of what you could become if you follow their guidance? Or a trickster who knows how to bend you to their whim?</p>
+      <div element="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_EXPANDED_SPELL_LIST" />
+      <div element="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_CONTINUITY_OF_SELF" />
+      <div element="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_FOREWARNED_IS_FOREARMED" />
+      <div element="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_MANIPULATING_THE_WEAVE" />
+      <div element="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_VISITOR_A_BODY_OUT_OF_TIME" />
+      <div element="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_SEARING_A_HOME_OF_OUR_OWN" />
+    </description>
+    <sheet>
+      <description>Your patron is a powerful being that appears to be... yourself?</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_EXPANDED_SPELL_LIST" level="1"/>
+      <grant type="Archetype Feature" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_CONTINUITY_OF_SELF" level="1"/>
+      <grant type="Archetype Feature" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_FOREWARNED_IS_FOREARMED" level="1"/>
+      <grant type="Archetype Feature" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_MANIPULATING_THE_WEAVE" level="6"/>
+      <grant type="Archetype Feature" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_VISITOR_A_BODY_OUT_OF_TIME" level="10"/>
+      <grant type="Archetype Feature" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_SEARING_A_HOME_OF_OUR_OWN" level="14"/>
+    </rules>
+  </element>
+  <element name="Expanded Spell List" type="Archetype Feature" source="abextras" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_EXPANDED_SPELL_LIST">
+    <supports>Warlock</supports>
+    <description>
+      <p>The Visitor lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+      <h5>VISITOR EXPANDED SPELLS</h5>
+      <table>
+        <thead>
+          <tr><td>Spell Level</td><td>Spells</td></tr>
+        </thead>
+        <tr><td>1st</td><td><em>shield, zephyr strike</em></td></tr>
+        <tr><td>2nd</td><td><em>alter self, pass without trace</em></td></tr>
+        <tr><td>3rd</td><td><em>blink, spirit guardians</em></td></tr>
+        <tr><td>4th</td><td><em>fire shield, guardians of nature</em></td></tr>
+        <tr><td>5th</td><td><em>antilife shell, mislead</em></td></tr>
+      </table>
+    </description>
+    <sheet display="false">
+      <description>The Visitor lets you choose from an expanded list of spells when you learn a warlock spell.</description>
+    </sheet>
+    <spellcasting name="Warlock" extend="true">
+      <extend>ID_PHB_SPELL_SHIELD</extend>
+      <extend>ID_PHB_SPELL_ZEPHYR_STRIKE</extend>
+      <extend>ID_PHB_SPELL_ALTER_SELF</extend>
+      <extend>ID_PHB_SPELL_PASS_WITHOUT_TRACE</extend>
+      <extend>ID_PHB_SPELL_BLINK</extend>
+      <extend>ID_PHB_SPELL_SPIRIT_GUARDIANS</extend>
+      <extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+      <extend>ID_XGTE_SPELL_GUARDIAN_OF_NATURE</extend>
+      <extend>ID_PHB_SPELL_ANTILIFE_SHELL</extend>
+      <extend>ID_PHB_SPELL_MISLEAD</extend>
+    </spellcasting>
+  </element>
+  <element name="The Continuity of Self" type="Archetype Feature" source="abextras" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_CONTINUITY_OF_SELF">
+    <description>
+      <p>As a bonus action, you can expend a number of hit die up to your Warlock level to restore your own hit points. Roll the dice and add your Charisma modifier to it. You regain hit points equal to the total (minimum of one).</p>
+      <p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Short Rest">
+      <description>You can expend up to {{level:warlock}} hit die to restore your own hit points. Roll the dice and add {{charisma:modifier}} to it. You regain hit points equal to to the total (minimum of one).</description>
+    </sheet>
+  </element>
+  <element name="Forewarned is Forearmed" type="Archetype Feature" source="abextras" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_FOREWARNED_IS_FOREARMED">
+    <description>
+      <p>As an action, you can cast the Guidance cantrip, targeting yourself.</p>
+      <p class="indent">Additionally, if you are forced to make a dexterity saving throw by an effect that you can see, you can choose to have advantage on that save. You cannot use this ability if you are blinded, deafened, or incapacitated. You can use this feature a number of times up to your Charisma modifier (minimum of once).</p>
+      <p class="indent">You regain all expended uses of this feature when you finish a long rest.</p>
+    </description>
+    <sheet usage="{{forewarned is forearmed:max uses}}/Long Rest">
+      <description>If you are forced to make a dexterity saving throw by an effect that you can see, you can choose to have advantage on that save. You cannot use this ability if you are blinded, deafened, or incapacitated.</description>
+    </sheet>
+    <rules>
+      <grant type="Spell" id="ID_PHB_SPELL_GUIDANCE" level="1" spellcasting="Warlock" />
+      <stat name="forewarned is forearmed:max uses" value="charisma:modifier" />
+    </rules>
+  </element>
+  <element name="Manipulating the Weave" type="Archetype Feature" source="abextras" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_MANIPULATING_THE_WEAVE">
+    <description>
+      <p>Starting at 6th level, when you are the sole target of a damaging spell, you can use your reaction to redirect that spell to a creature of your choice within range of the original spell. Once you use this feature you cannot use it again until you finish a long rest.</p>
+      <p class="indent">Additionally, you gain proficiency in the Arcana skill. If you are already proficient in the Arcana skill, you may double your proficiency when rolling an ability that uses that skill.</p>
+    </description>
+    <sheet action="Reaction" usage="1/Long Rest">
+      <description>when you are the sole target of a damaging spell, you can use your reaction to redirect that spell to a creature of your choice within range of the original spell. Once you use this feature you cannot use it again until you finish a long rest.</description>
+    </sheet>
+    <rules>
+      <grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ARCANA" />
+    </rules>
+  </element>
+  <element name="A Body Out of Time" type="Archetype Feature" source="abextras" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_VISITOR_A_BODY_OUT_OF_TIME">
+    <description>
+      <p>You suffer none of the drawbacks of old age, and you can't be aged magically. You also have resistance to poison damage and immunity to being poisoned.</p>
+    </description>
+    <sheet>
+      <description>You suffer none of the drawbacks of old age, and you can't be aged magically. You are immune to the poisoned condition.</description>
+    </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+    </rules>
+  </element>
+  <element name="A Home of Our Own" type="Archetype Feature" source="abextras" id="ID_ABEXTRAS_ARCHETYPE_FEATURE_VISITOR_SEARING_A_HOME_OF_OUR_OWN">
+    <description>
+      <p>As your patron sees you fulfil your shared destiny, they grant you a refuge from the outside world.</p>
+      <p class="indent">As a bonus action, you create a shadowy portal on a flat solid surface that you can see within range. The portal is large enough to allow medium creatures to pass through unhindered. When opened, the portal leads to a demiplane that initially appears as an empty room, 30ft in each dimension and made of either wood or stone.</p>
+      <p class="indent">The portal remains open for five minutes before it disappears from both the location where you summoned it and the demiplane. Any creatures or objects inside the demiplane remain trapped there.</p>
+      <p class="indent">While on the demiplane, creatures can breath as if there is always a clean supply of air. Furthermore, while you are on the demiplane, time passes as though you were standing at the location where you opened it. While you are outside of the demiplane, time within it passes just as it does for you.</p>
+      <p class="indent">If you are within the demiplane and the portal has disappeared, you may expend the use of this ability to reopen the portal at the last location it was opened.</p>
+      <p class="indent">Once you use this feature, you cannot use it again until you finish a short or long rest.</p>
+    </description>
+    <sheet action="Bonus Action" usage="1/Short Rest">
+      <description>You create a shadowy portal on a flat solid surface that you can see within range. The portal is large enough to allow medium creatures to pass through unhindered. When opened, the portal leads to a demiplane that initially appears as an empty room, 30ft in each dimension and made of either wood or stone.
+      The portal remains open for five minutes before it disappears from both the location where you summoned it and the demiplane. Any creatures or objects inside the demiplane remain trapped there.
+      While on the demiplane, creatures can breath as if there is always a clean supply of air. Furthermore, while you are on the demiplane, time passes as though you were standing at the location where you opened it. While you are outside of the demiplane, time within it passes just as it does for you.
+      If you are within the demiplane and the portal has disappeared, you may expend the use of this ability to reopen the portal at the last location it was opened.</description>
+    </sheet>
+  </element>
+</elements>
